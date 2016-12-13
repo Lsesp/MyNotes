@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog"
+    android:theme="@style/MyNoteTheme">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp">
+
+                <ImageView
+
+                    android:src="@drawable/ic_assignment"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3dp" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/task"
+                    android:hint="Name" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp">
+
+                <ImageView
+
+                    android:src="@drawable/ic_event"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3dp" />
+
+                <EditText
+                    android:hint="Pick a date.."
+                    android:layout_width="150dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pickDate"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_access_time"
+                    android:id="@+id/clock"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3dp" />
+
+                <EditText
+                    android:id="@+id/timePick"
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Pick a time.."
+                    android:inputType="time"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:maxLines="1" />
+
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="-18dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_menu_send"
+        android:id="@+id/floatingActionButton" />
+
+</LinearLayout>
